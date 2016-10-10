@@ -18,7 +18,7 @@ use Dot\FlashMessenger\FlashMessengerInterface;
  */
 class FlashMessengerPlugin implements PluginInterface
 {
-    /** @var FlashMessengerInterface  */
+    /** @var FlashMessengerInterface */
     protected $flashMessenger;
 
     /**
