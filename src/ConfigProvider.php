@@ -9,7 +9,7 @@
 
 namespace Dot\Controller\Plugin\FlashMessenger;
 
-use Dot\FlashMessenger\Factory\FlashMessengerFactory;
+use Dot\Controller\Plugin\FlashMessenger\Factory\FlashMessengerPluginFactory;
 
 /**
  * Class ConfigProvider
@@ -26,7 +26,7 @@ class ConfigProvider
             'dot_controller' => [
                 'plugin_manager' => [
                     'factories' => [
-                        'flashMessenger' => FlashMessengerFactory::class,
+                        'flashMessenger' => FlashMessengerPluginFactory::class,
                     ],
                 ],
             ],
