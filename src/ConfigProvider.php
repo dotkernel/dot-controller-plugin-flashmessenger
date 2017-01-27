@@ -26,7 +26,7 @@ class ConfigProvider
             'dot_controller' => [
                 'plugin_manager' => [
                     'factories' => [
-                        'flashMessenger' => FlashMessengerPluginFactory::class,
+                        'messages' => FlashMessengerPluginFactory::class,
                     ],
                 ],
             ],
