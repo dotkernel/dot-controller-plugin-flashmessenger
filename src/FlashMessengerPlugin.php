@@ -7,6 +7,8 @@
  * Time: 6:49 PM
  */
 
+declare(strict_types = 1);
+
 namespace Dot\Controller\Plugin\FlashMessenger;
 
 use Dot\Controller\Plugin\PluginInterface;
@@ -31,70 +33,80 @@ class FlashMessengerPlugin implements PluginInterface
     }
 
     /**
-     * @param string $namespace
+     * @param string $type
+     * @param string $channel
      * @param mixed $value
      */
-    public function addMessage($namespace, $value)
+    public function addMessage(string $type, mixed $value, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addMessage($namespace, $value);
+        $this->flashMessenger->addMessage($type, $value, $channel);
     }
 
     /**
-     * @param $key
-     * @param $value
+     * @param string $key
+     * @param string $channel
+     * @param mixed $value
      */
-    public function addData($key, $value)
+    public function addData(string $key, mixed $value, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addData($key, $value);
+        $this->flashMessenger->addData($key, $value, $channel);
     }
 
     /**
-     * @param $error
+     * @param mixed $error
+     * @param string $channel
      */
-    public function addError($error)
+    public function addError(mixed $error, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addError($error);
+        $this->flashMessenger->addError($error, $channel);
     }
 
     /**
-     * @param $message
+     * @param mixed $message
+     * @param string $channel
      */
-    public function addWarning($message)
+    public function addWarning(mixed $message, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addWarning($message);
+        $this->flashMessenger->addWarning($message, $channel);
     }
 
     /**
-     * @param $message
+     * @param mixed $message
+     * @param string $channel
      */
-    public function addInfo($message)
+    public function addInfo(mixed $message, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addInfo($message);
+        $this->flashMessenger->addInfo($message, $channel);
     }
 
     /**
-     * @param $message
+     * @param mixed $message
+     * @param string $channel
      */
-    public function addSuccess($message)
+    public function addSuccess(mixed $message, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL)
     {
-        $this->flashMessenger->addSuccess($message);
+        $this->flashMessenger->addSuccess($message, $channel);
     }
 
     /**
-     * @param $namespace
-     * @return array|null
+     * @param string $type
+     * @param string $channel
+     * @return array
      */
-    public function getMessages($namespace = null)
-    {
-        return $this->flashMessenger->getMessages($namespace);
+    public function getMessages(
+        string $type = null,
+        string $channel = FlashMessengerInterface::DEFAULT_CHANNEL
+    ): array {
+        return $this->flashMessenger->getMessages($type, $channel);
     }
 
     /**
-     * @param $key
+     * @param string $key
+     * @param string $channel
      * @return mixed
      */
-    public function getData($key)
+    public function getData(string $key, string $channel = FlashMessengerInterface::DEFAULT_CHANNEL): ?mixed
     {
-        return $this->flashMessenger->getData($key);
+        return $this->flashMessenger->getData($key, $channel);
     }
 }

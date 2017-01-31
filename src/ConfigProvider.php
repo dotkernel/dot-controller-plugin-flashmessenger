@@ -7,6 +7,8 @@
  * Time: 6:49 PM
  */
 
+declare(strict_types = 1);
+
 namespace Dot\Controller\Plugin\FlashMessenger;
 
 use Dot\Controller\Plugin\FlashMessenger\Factory\FlashMessengerPluginFactory;
@@ -20,13 +22,13 @@ class ConfigProvider
     /**
      * @return array
      */
-    public function __invoke()
+    public function __invoke(): array
     {
         return [
             'dot_controller' => [
                 'plugin_manager' => [
                     'factories' => [
-                        'messages' => FlashMessengerPluginFactory::class,
+                        'messenger' => FlashMessengerPluginFactory::class,
                     ],
                 ],
             ],
