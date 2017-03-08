@@ -1,7 +1,7 @@
 {
   "name": "dotkernel/dot-controller-plugin-flashmessenger",
   "type": "library",
-  "description": "Flashmessenger DK controller plugin",
+  "description": "DotKernel flash messenger controller plugin",
   "license": "MIT",
   "authors": [
     {
@@ -10,15 +10,15 @@
     }
   ],
   "require": {
-    "php": "^5.6 || ^7.0",
+    "php": "^7.1",
     "container-interop/container-interop": "^1.1",
-    "dotkernel/dot-controller": "0.6.x-dev"
+
+    "dotkernel/dot-controller": "~0.1",
+    "dotkernel/dot-flashmessenger": "~0.1"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.8",
-    "squizlabs/php_codesniffer": "^2.3",
-
-    "dotkernel/dot-flashmessenger": "0.6.x-dev"
+    "squizlabs/php_codesniffer": "^2.3"
   },
   "autoload": {
     "psr-4": {
@@ -32,7 +32,7 @@
   },
   "extra": {
     "branch-alias": {
-      "dev-master": "0.6-dev"
+      "dev-master": "0.2-dev"
     }
   }
 }

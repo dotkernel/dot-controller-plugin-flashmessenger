@@ -16,38 +16,38 @@ Next, make sure you merge the `ConfigProvider` to your application's configurati
 
 In any controller, you can access the plugin by calling
 ```php
-$this->flashMessenger()->...
+$this->messenger()->...
 ```
 
 The methods defined by this plugin are
 ```php
-$this->flashMessenger()->addMessage($namespace, $value);
+$this->messenger()->addMessage($namespace, $value);
 ```
 Adds a session message to at the requested namespace
 
 ```php
-$this->flashMessenger()->addData($key, $data);
+$this->messenger()->addData($key, $data);
 ```
 Almost the same as the addMessage method, but named differently in order to reserve this function for adding general session data.
 
 There are also some shortcuts to the addMessage method which are using predefined namespaces
 ```php
-$this->flashMessenger()->addError($error);
+$this->messenger()->addError($error);
 
-$this->flashMessenger()->addWarning($message);
+$this->messenger()->addWarning($message);
 
-$this->flashMessenger()->addInfo($message);
+$this->messenger()->addInfo($message);
 
-$this->flashMessenger()->addSuccess($message);
+$this->messenger()->addSuccess($message);
 ```
 
 Also, the getter methods
 ```php
-$this->flashMessenger()->getMessages($namespace = null);
+$this->messenger()->getMessages($namespace = null);
 ```
 Gets all messages under a namespace, or if namespace is not specified it will return all namespaces with all messages
 
 ```php
-$this->flashMessenger()->getData($key);
+$this->messenger()->getData($key);
 ```
 Gets the data stored at the specified key

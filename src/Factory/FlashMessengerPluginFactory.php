@@ -7,6 +7,8 @@
  * Time: 6:50 PM
  */
 
+declare(strict_types = 1);
+
 namespace Dot\Controller\Plugin\FlashMessenger\Factory;
 
 use Dot\Controller\Plugin\FlashMessenger\FlashMessengerPlugin;
