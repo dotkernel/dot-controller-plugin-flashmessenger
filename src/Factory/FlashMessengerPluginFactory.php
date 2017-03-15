@@ -11,7 +11,7 @@ namespace Dot\Controller\Plugin\FlashMessenger\Factory;
 
 use Dot\Controller\Plugin\FlashMessenger\FlashMessengerPlugin;
 use Dot\FlashMessenger\FlashMessengerInterface;
-use Interop\Container\ContainerInterface;
+use Psr\Container\ContainerInterface;
 
 /**
  * Class FlashMessengerPluginFactory
