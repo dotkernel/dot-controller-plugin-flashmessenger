@@ -2,6 +2,13 @@
 
 Flashmessenger controller plugin for easy access to the flash messenger from any controller.
 
+![OSS Lifecycle](https://img.shields.io/osslifecycle/dotkernel/dot-controller-plugin-flashmessenger)
+[![GitHub license](https://img.shields.io/github/license/dotkernel/dot-controller-plugin-flashmessenger)](https://github.com/dotkernel/dot-controller-plugin-flashmessenger/blob/2.0.1/LICENSE.md)
+
+# NOTE
+
+> **dot-controller-plugin-flashmessenger** is **archived** and will receive no further development!
+
 # Installation
 
 Run the following command in your project root directory
