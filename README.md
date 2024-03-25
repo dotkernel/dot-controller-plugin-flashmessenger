@@ -1,16 +1,15 @@
+> [!CAUTION]
+> ## Security-Only Maintenance Mode
+> 
+> This package is considered feature-complete, and is now in **security-only** maintenance mode.
+> 
 # dot-controller-plugin-flashmessenger
 
 Flashmessenger controller plugin for easy access to the flash messenger from any controller.
 
 ![OSS Lifecycle](https://img.shields.io/osslifecycle/dotkernel/dot-controller-plugin-flashmessenger)
 [![GitHub license](https://img.shields.io/github/license/dotkernel/dot-controller-plugin-flashmessenger)](https://github.com/dotkernel/dot-controller-plugin-flashmessenger/blob/2.0.1/LICENSE.md)
-![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-controller-plugin-flashmessenger/2.9.0)
-
-# NOTE
-
-> **dot-controller-plugin-flashmessenger** is in **maintenance** mode.
-
-> This package is considered feature-complete, and is now in **security-only** maintenance mode.
+![PHP from Packagist (specify version)](https://img.shields.io/packagist/php-v/dotkernel/dot-controller-plugin-flashmessenger/2.9.2)
 
 
 # Installation
